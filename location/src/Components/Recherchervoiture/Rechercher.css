@@ -1,0 +1,93 @@
+/* Conteneur général */
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Image du carousel */
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 0; /* Pas de bordure ni arrondi */
+  display: block;
+}
+
+/* Légende superposée, directement sur l’image */
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: auto;
+  color: white;
+  background: none; /* Pas de fond */
+  padding: 0;
+  max-width: 70%;
+  text-align: left;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Ombre pour lisibilité */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+/* Titre avec étoiles */
+.carousel-caption h5 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Étoiles en jaune doré */
+.carousel-caption i.fa-star {
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+
+/* Liste des caractéristiques */
+.carousel-caption ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.carousel-caption ul li {
+  line-height: 1.3;
+  margin-bottom: 3px;
+}
+
+/* Labels en gras */
+.carousel-caption ul li span {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+/* Boutons de navigation */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.7));
+  width: 40px;
+  height: 40px;
+}
+
+/* Responsive - adaptation sur petits écrans */
+@media (max-width: 768px) {
+  .carousel-caption {
+    max-width: 90%;
+    font-size: 0.95rem;
+    bottom: 15px;
+    left: 10px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+}

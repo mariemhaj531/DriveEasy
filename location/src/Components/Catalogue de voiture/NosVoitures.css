@@ -1,0 +1,32 @@
+ .card-img-top {
+    width: 170px; 
+    height: 185px; 
+    object-fit: cover;
+    border-radius: 5px;
+  }
+ 
+.car-model-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; 
+    margin-bottom: 10px; 
+    text-transform: uppercase; 
+    text-align: center; 
+  }
+  
+  .car-model-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #17a2b8; 
+    margin-bottom: 10px; 
+    text-transform: capitalize;  
+    text-align: center; 
+  }
+  .car-description {
+    font-size: 16px;
+    color: black; 
+    margin-bottom: 15px; 
+  }
+.card-text{
+  color: black;
+}

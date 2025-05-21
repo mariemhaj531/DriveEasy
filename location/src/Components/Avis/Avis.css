@@ -1,0 +1,106 @@
+body{
+ text-align: center;
+ justify-content: center;
+}
+.section2 {
+    background: url(../../assets/background.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-position:right;
+    padding-top:80px;
+    margin-right:-10px;
+  } 
+  .section2 h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+    justify-content: center;
+  }
+  .displine {
+    display:flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 20px; 
+  }
+  .avis{   
+    text-align: center;
+  }
+  .testimonail_img {
+    text-align: center;
+    margin-bottom:30px;
+    width:150px;
+    height:180px;
+  }
+  
+  .testimonail_img img {
+    width: 170px; 
+    height: 190px; 
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .single_testimonial {
+    padding:20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+    text-align:left;
+    opacity: 0;
+    transform:translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    width:230px;
+    height:300px;
+  }
+  
+  .single_testimonial h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .single_testimonial p {
+    font-size: 1rem;
+    color: #555;
+    width:180px;
+    height:180px;
+    margin-top:0px;
+  }
+  
+  .client_info {
+    margin-top: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  .client_info h6 {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .client_info p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .section2 .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section2 .row > div {
+    flex: 1;
+  }
+  
+  .section2 .row .testimonail_img,
+  .section2 .row .single_testimonial,
+  .section2 .row .client_info {
+    opacity: 1;
+    transform: translateY(0);
+  }

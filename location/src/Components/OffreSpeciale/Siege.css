@@ -1,0 +1,143 @@
+/* CONTENEUR PRINCIPAL */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+/* SECTION FLEX */
+.def {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* PARTIE GAUCHE (TEXTE) */
+.pldetails {
+  flex: 1 1 500px;
+}
+
+/* TITRE */
+.title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #f86565;
+  font-weight: bold;
+  border-left: 5px solid #f86565;
+  padding-left: 10px;
+}
+
+/* DESCRIPTION */
+.description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.description span {
+  font-weight: bold;
+  color: #f86565;
+}
+
+/* SECTION SERVICES */
+.services {
+  flex: 1 1 350px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ANIMATION BORDURE */
+.border-animation {
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, #007BFF, #00c6ff);
+  border-image-slice: 1;
+  border-radius: 10px;
+  padding: 15px;
+  animation: borderPulse 5s infinite ease-in-out;
+}
+
+/* LISTE DE SERVICES */
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 10px;
+  color: #333;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.service i {
+  color: #f86565;
+  font-size: 1.2rem;
+}
+
+.service:hover {
+  color: #0056b3;
+}
+
+/* ANIMATION */
+@keyframes borderPulse {
+  0%, 100% {
+    border-image: linear-gradient(45deg, #f86565, #00c6ff);
+  }
+  50% {
+    border-image: linear-gradient(45deg, #00c6ff, #f86565);
+  }
+}
+
+/* RESPONSIVE TABLETTE */
+@media (max-width: 900px) {
+  .def {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .description p,
+  .service {
+    font-size: 1rem;
+  }
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description p,
+  .service {
+    font-size: 0.95rem;
+  }
+
+  .services {
+    padding: 15px;
+  }
+
+  .service-list {
+    gap: 8px;
+  }
+
+  .service i {
+    font-size: 1rem;
+  }
+}

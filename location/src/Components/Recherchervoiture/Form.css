@@ -1,0 +1,43 @@
+.rechercher {
+  display: flex;
+  flex-direction: row;
+  background:url("../../assets/background.jpg");
+  padding: 20px; 
+  margin-top:-200px;
+}
+
+.rechercher form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.rechercher label {
+  width: 180px; 
+  margin-right:10px; 
+  justify-content: center;
+}
+
+.rechercher input[type="Date"],
+.rechercher input[type="text"],
+.rechercher button {
+  flex: 1;
+  padding: 5px 5px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.rechercher .Paragraphe {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.rechercher .Paragraphe p {
+  flex: 1;
+  margin-right: 10px; 
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+

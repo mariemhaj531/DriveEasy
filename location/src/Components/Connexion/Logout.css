@@ -1,0 +1,97 @@
+/* Logout.css */
+
+.main {
+    display: flex;
+       justify-content: center;
+    align-items: center;
+    height: 145vh;
+  }
+  
+  .mini-main {
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .part {
+    text-align: center;
+    margin-top:120px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  input.name {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .inp {
+    position: relative;
+  }
+  
+  .inp .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .btn {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #b103fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .link {
+    margin-top: 20px;
+    text-align: center;
+    color:black;
+  }
+  
+  .link a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .Social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .Social div {
+    margin: 0 10px;
+  }
+  
+  .Social .social-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .Social .social-icon {
+    font-size: 24px;
+    color: #333;
+  }
+  
